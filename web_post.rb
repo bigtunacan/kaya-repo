@@ -21,8 +21,9 @@ post '/form' do
   return "hello"
 end
 
-post '/angular' do
 
+post '/angular' do
+  
   data = JSON.parse(request.body.read)
   json data
 
