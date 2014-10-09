@@ -16,8 +16,8 @@ angular.module("MainModule", [])
 	  
 	  $http({
 		  method: "POST",
-		  /*url: "http://floating-beyond-3787.herokuapp.com/angular",*/
-		  url: "https://worker-aws-us-east-1.iron.io/2/projects/542c8609827e3f0005000123/tasks/webhook?code_name=botweb&oauth=LOo5Nc0x0e2GJ838_nbKoheXqM0",
+		  url: "http://floating-beyond-3787.herokuapp.com/cache/543619e960c376633903a79c",
+		  /*url: "https://worker-aws-us-east-1.iron.io/2/projects/542c8609827e3f0005000123/tasks/webhook?code_name=botweb&oauth=LOo5Nc0x0e2GJ838_nbKoheXqM0",*/
 		  data: {input: $scope.newChat}
 	  })
 	    .success(function (data)

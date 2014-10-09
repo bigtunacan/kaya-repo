@@ -3,8 +3,12 @@ require 'sinatra'
 require 'json'
 require 'iron_cache'
 
+# Settings
+set :server, 'thin'
+set :session_secret, 'super-secret'
+
 get '/' do
-  "Hello, World!"
+  erb :index
 end
 
 get '/hello/:name' do
