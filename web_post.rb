@@ -3,9 +3,6 @@ require 'sinatra'
 require 'json'
 require 'iron_cache'
 
-# Settings
-set :server, 'thin'
-set :session_secret, 'super-secret'
 
 get '/' do
   erb :angular
