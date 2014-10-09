@@ -2,10 +2,10 @@ require 'rubygems'
 require 'sinatra'
 require 'json'
 require 'iron_cache'
-
+require 'Haml'
 
 get '/' do
-  erb :angular
+  haml :index
 end
 
 get '/hello/:name' do
@@ -26,7 +26,8 @@ post '/angular' do
   
   data = JSON.parse(request.body.read)
   json data
-
+  return data
+  
 end
 
 post '/cache/:task_id' do

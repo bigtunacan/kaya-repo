@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    haml (4.0.5)
+      tilt
     iron_cache (1.4.2)
       iron_core (>= 0.5.1)
     iron_core (1.0.5)
@@ -28,6 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   iron_cache
   json
   shotgun

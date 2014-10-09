@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %script{:src=> "//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"}
+    %script{:src=> 'js/script.js'}
+
+
+  %body{'ng-app' =>"MainModule"}
+    %div{'ng-controller' => "MainController"}
+      %ul
+        %li{'ng-repeat'=> 'chat in chats'} 
+          {{chat}}
+		  
+        %p {{newChat}} 	
+        %input{'type' => 'text', 'ng-model'=>'newChat', 'ng-keyup' => "$event.keyCode == 13 && submitData()"}
+	 
+        %button{'ng-click' => "submitData()"} Submit
+

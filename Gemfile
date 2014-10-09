@@ -5,4 +5,7 @@ gem 'sinatra'
 gem 'shotgun'
 gem 'iron_cache'
 gem 'json'
+gem 'haml'
+
+
 # gem "rails"
