@@ -8,7 +8,7 @@ set :server, 'thin'
 set :session_secret, 'super-secret'
 
 get '/' do
-  erb :index
+  erb :angular
 end
 
 get '/hello/:name' do
