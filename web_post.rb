@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'sinatra/json'
 require 'json'
 require 'iron_cache'
 
