@@ -26,7 +26,6 @@ end
 post '/angular' do
   
   data = JSON.parse(request.body.read)
-  json data
   return data
   
 end

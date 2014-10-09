@@ -13,8 +13,9 @@
 		  
         %p {{newChat}} 	
         %input{'type' => 'text', 'ng-model'=>'newChat', 'ng-keyup' => "$event.keyCode == 13 && submitData()"}
-	 
-        %button{'ng-click' => "submitData()"} Submit
+        
+-# hidden button	 
+        %button{'ng-click' => "submitData()", "style" => "position: absolute; left: -9999px; width: 1px; height: 1px;"}
 		
     %div
       %ul
