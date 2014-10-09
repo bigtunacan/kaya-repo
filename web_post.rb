@@ -2,7 +2,8 @@ require 'rubygems'
 require 'sinatra'
 require 'json'
 require 'iron_cache'
-require 'Haml'
+require 'haml'
+require "bundler/setup"
 
 get '/' do
   haml :index
