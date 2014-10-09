@@ -24,9 +24,8 @@ end
 
 
 post '/angular' do
-  
-  data = JSON.parse(request.body.read)
-  return data
+  puts params
+  return params
   
 end
 
