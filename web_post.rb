@@ -25,8 +25,9 @@ end
 
 
 post '/angular' do
-  puts params
+  puts "params: #{params}"
   puts params[:input]
+  puts @json = JSON.parse(request.body.read)
   return params[:input]  
 end
 
