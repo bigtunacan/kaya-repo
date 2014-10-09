@@ -4,6 +4,7 @@ require 'json'
 require 'iron_cache'
 require 'haml'
 require "bundler/setup"
+require 'rest_client'
 
 get '/' do
   haml :index
@@ -25,8 +26,8 @@ end
 
 post '/angular' do
   puts params
-  return params
-  
+  puts params[:input]
+  return params[:input]  
 end
 
 post '/cache/:task_id' do

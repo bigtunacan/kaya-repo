@@ -3,21 +3,21 @@
   %head
     %script{:src=> "//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"}
     %script{:src=> 'js/script.js'}
-
+    %link(href= "/css/style.css" rel="stylesheet")
 
   %body{'ng-app' =>"MainModule"}
-    %div{'ng-controller' => "MainController"}
+    %div{:id => 'header'}
+    %div{'ng-controller' => "MainController", :id => 'chat-area'}
       %ul
         %li{'ng-repeat'=> 'chat in chats'} 
           {{chat}}
 		  
         %p {{newChat}} 	
-        %input{'type' => 'text', 'ng-model'=>'newChat', 'ng-keyup' => "$event.keyCode == 13 && submitData()"}
+      %input{'type' => 'text', :id => 'type-here-box', 'ng-model'=>'newChat', 'ng-keyup' => "$event.keyCode == 13 && submitData()"}
         
--# hidden button	 
-        %button{'ng-click' => "submitData()", "style" => "position: absolute; left: -9999px; width: 1px; height: 1px;"}
+      %button{'ng-click' => "submitData()", "style" => "position: absolute; left: -9999px; width: 1px; height: 1px;"}
 		
-    %div
+    %div{:id => 'navigation'}
       %ul
         %li 
           %a Who is Kaya?

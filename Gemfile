@@ -6,6 +6,6 @@ gem 'shotgun'
 gem 'iron_cache'
 gem 'json'
 gem 'haml'
-
-
+gem 'sass'
+gem 'rest-client'
 # gem "rails"

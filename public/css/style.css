@@ -1,0 +1,8 @@
+/* file: style.scss */
+/* sass --watch style.scss:style.css */
+#chat-area
+li {
+  font-size: 24px; }
+
+input#type-here-box {
+  height: 40px; }
