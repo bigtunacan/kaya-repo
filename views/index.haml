@@ -4,9 +4,14 @@
     %script{:src=> "//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"}
     %script{:src=> 'js/script.js'}
     %link(href= "/css/style.css" rel="stylesheet")
+    %link(href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet')
+
 
   %body{'ng-app' =>"MainModule"}
     %div{:id => 'header'}
+      %img{:src => '/images/logo1x.png'}
+      %h2 Your personal coach available 24/7 by text, email, and webchat 
+    
     %div{'ng-controller' => "MainController", :id => 'chat-area'}
       %ul
         %li{'ng-repeat'=> 'chat in chats'} 
