@@ -1,12 +1,39 @@
 /* file: style.scss */
 /* sass --watch style.scss:style.css */
 
-#chat-area
-  li {
-    font-size: 24px;
+body {
+  font-family: 'Oxygen', sans-serif;
+
+  #header {
+    h2 {
+      margin-top: 0px;
+      font-size: 16px;
+    }  
   }
   
-input#type-here-box {
-  height: 40px;
-}  
+  #chat-area {
+    width: 800px;
+    li {
+      font-size: 24px;
+    }
+  
+    input#type-here-box {
+      height: 40px;
+      width: 800px;
+      border-color: cornflowerblue;
+      border-style: solid;
+      border-width: 4px;
+      background-color: aliceblue;
+      font-size:24px;
+      padding:6px;
+  
+    }
+  }   
+
+  #navigation {
+    float:right;
+    background-color: beige;
+    line-height: 46px;
+  } 
+}
 
