@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'rest-client', '~> 1.7.2'
+gem 'iron_worker_ng'
+gem 'iron_cache'
+gem 'twilio-ruby'
+gem 'chronic'
+gem 'redis'
+gem 'firebase'
+gem 'mandrill-api'

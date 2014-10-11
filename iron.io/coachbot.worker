@@ -1,0 +1,17 @@
+# define the runtime language
+runtime "ruby"
+# exec is the file that will be executed:
+exec "coachbot_worker.rb"
+stack "ruby-2.1"
+gem 'rest_client', '~> 1.7.2'
+
+# set variables for worker
+# Set up Bot variables --- move to ENV later
+
+   set_env "APP_ID" , "1409611358153"
+   set_env "USER_KEY" , '3b9ccb48e734fce6b982a9c1c2cef301'
+   set_env "BOTNAME" , 'coachbot'
+
+#  Set up SendHub variables
+   set_env "NUMBER" , '4155086888'
+   set_env "APIKEY" ,  'ab94c92b97bc6c18e53d4c4465ebd84318029ccc'

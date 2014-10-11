@@ -17,8 +17,8 @@
         %li{'ng-repeat'=> 'chat in chats'} 
           {{chat}}
 		  
-        %p {{newChat}} 	
-      %input{'type' => 'text', :id => 'type-here-box', 'ng-model'=>'newChat', 'ng-keyup' => "$event.keyCode == 13 && submitData()"}
+      -#  %p {{newChat}} 	
+      %input{'type' => 'text', :id => 'type-here-box', 'placeholder' => 'type here or click link on right' , 'ng-model'=>'newChat', 'ng-keyup' => "$event.keyCode == 13 && submitData()"}
         
       %button{'ng-click' => "submitData()", "style" => "position: absolute; left: -9999px; width: 1px; height: 1px;"}
 		

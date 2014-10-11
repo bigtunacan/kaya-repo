@@ -28,7 +28,9 @@ post '/angular' do
   puts "params: #{params}"
   puts params[:input]
   puts @json = JSON.parse(request.body.read)
-  return params[:input]  
+  
+  return RestClient.post 'https://worker-aws-us-east-1.iron.io/2/projects/542c8609827e3f0005000123/tasks/webhook?code_name=botweb&oauth=LOo5Nc0x0e2GJ838_nbKoheXqM0'
+   
 end
 
 post '/cache/:task_id' do

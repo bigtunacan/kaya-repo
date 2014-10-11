@@ -1,0 +1,44 @@
+# define the runtime language
+runtime "ruby"
+stack "ruby-2.1"
+
+# exec is the file that will be executed:
+exec "botweb_worker.rb"
+
+# dependencies
+file "bot_response.rb"
+file "email_client.rb"
+file "response_pair.rb"
+file "iron.json"
+
+full_remote_build true
+
+# gems
+
+gem 'rest_client', '~> 1.7.2'
+gem 'twilio-ruby'
+gem 'iron_cache'
+gem 'mandrill-api'
+
+# set variables for worker
+# Set up Bot variables --- move to ENV later
+
+   set_env "APP_ID" , "1409611358153"
+   set_env "USER_KEY" , '3b9ccb48e734fce6b982a9c1c2cef301'
+   set_env "BOTNAME" , 'coachbot'
+
+#  Set up SendHub variables
+   set_env "NUMBER" , '4155086888'
+   set_env "APIKEY" ,  'ab94c92b97bc6c18e53d4c4465ebd84318029ccc'
+   
+#  Set up Twilio Variables
+   set_env "ACCOUNT_SID" , 'AC6e92f975f7549ded871197783bf3381d'
+   set_env "AUTH_TOKEN" , '543cff071084c9cffb19d3a54c9ad35f'
+   
+#  Set up Mandrill
+   set_env "MANDRILL_API_KEY" , 'cb4LVEKCNC955Y42Gn1Cag' 
+   
+#  Set up FireBase
+   set_env "FIREBASE_URL" , 'https://blazing-fire-9144.firebaseio.com/'    
+   
+      

@@ -17,7 +17,20 @@ body {
       border-width: 4px;
       background-color: aliceblue;
       font-size: 24px;
-      padding: 6px; }
+      padding: 6px;
+      position: fixed;
+      bottom: 50px;
+      color: skyblue; }
+  body ::-webkit-input-placeholder {
+    color: skyblue; }
+  body :-moz-placeholder {
+    /* Firefox 18- */
+    color: skyblue; }
+  body ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: skyblue; }
+  body :-ms-input-placeholder {
+    color: skyblue; }
   body #navigation {
     float: right;
     background-color: beige;

@@ -2,7 +2,7 @@ angular.module("MainModule", [])
   .controller("MainController", function ($scope, $http)
   {
 	$scope.chats = [];  
-    $scope.newChat = "type here";
+    $scope.newChat = "";
 	$scope.errors = [];
 	
     $scope.submitData = function ()
@@ -14,6 +14,8 @@ angular.module("MainModule", [])
       /* $http.post("http://requestb.in/qwrtysqw", null, config)*/
 	  $scope.chats.push($scope.newChat) /*this gets moved to success */
 	  
+    /*clear text field*/
+    $scope.newChat = null
 	  $http({
 		  method: "POST",
 		  url: "http://floating-beyond-3787.herokuapp.com/angular",

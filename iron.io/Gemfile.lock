@@ -1,0 +1,58 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    builder (3.2.2)
+    chronic (0.10.2)
+    ethon (0.7.1)
+      ffi (>= 1.3.0)
+    excon (0.39.6)
+    ffi (1.9.5)
+    firebase (0.2.2)
+      json
+      typhoeus (>= 0.6.1)
+    iron_cache (1.4.2)
+      iron_core (>= 0.5.1)
+    iron_core (1.0.5)
+      rest (>= 2.6.4)
+    iron_worker_ng (1.5.0)
+      bundler
+      iron_core (>= 1.0.0)
+      rubyzip (= 0.9.9)
+    json (1.8.1)
+    jwt (1.0.0)
+    mandrill-api (1.0.52)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
+    mime-types (2.3)
+    multi_json (1.10.1)
+    net-http-persistent (2.9.4)
+    netrc (0.7.7)
+    redis (3.1.0)
+    rest (2.7.2)
+      net-http-persistent (>= 2.9.1)
+      rest_client (>= 1.7.1)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    rest_client (1.7.3)
+      netrc (~> 0.7.7)
+    rubyzip (0.9.9)
+    twilio-ruby (3.13.1)
+      builder (>= 2.1.2)
+      jwt (~> 1.0.0)
+      multi_json (>= 1.3.0)
+    typhoeus (0.6.9)
+      ethon (>= 0.7.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chronic
+  firebase
+  iron_cache
+  iron_worker_ng
+  mandrill-api
+  redis
+  rest-client (~> 1.7.2)
+  twilio-ruby
