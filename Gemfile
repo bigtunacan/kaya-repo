@@ -8,4 +8,6 @@ gem 'json'
 gem 'haml'
 gem 'sass'
 gem 'rest-client'
+gem 'twilio-ruby'
+
 # gem "rails"
