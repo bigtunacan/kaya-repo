@@ -25,6 +25,7 @@ end
 
 
 post '/angular' do
+  puts "READ THIS"
   puts request.body.rewind
   puts request_payload = JSON.parse(request.body.read)
   
