@@ -15,7 +15,7 @@ angular.module("MainModule", [])
 	    $scope.chats.push($scope.newChat) /*this gets moved to success */
 	  
     /*clear text field*/
-      $scope.newChat = null
+
 	    $http({
 		    method: "POST",
 		    url: "http://floating-beyond-3787.herokuapp.com/angular",
@@ -36,6 +36,8 @@ angular.module("MainModule", [])
         });
 		
       };
+      
+      $scope.newChat = null
 /*    
   .directive('enterLinktext', function() {
      return {
