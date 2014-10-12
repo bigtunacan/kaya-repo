@@ -6,6 +6,8 @@ require 'haml'
 require "bundler/setup"
 require 'rest_client'
 
+load 'iron.io/botweb_response.rb'
+
 get '/' do
   haml :index
 end
@@ -29,9 +31,11 @@ post '/angular' do
   puts request.body.rewind
   puts "POST JSON.parse"
   puts request_payload = JSON.parse(request.body.read)
+  puts "PARSE PAYLOAD"
+  puts request_payload['input']
   
-  
-  return RestClient.post 'https://worker-aws-us-east-1.iron.io/2/projects/542c8609827e3f0005000123/tasks/webhook?code_name=botweb&oauth=LOo5Nc0x0e2GJ838_nbKoheXqM0'
+  puts BotResponse.get_bot_response('web',request_payload['input'])
+  #return RestClient.post 'https://worker-aws-us-east-1.iron.io/2/projects/542c8609827e3f0005000123/tasks/webhook?code_name=botweb&oauth=LOo5Nc0x0e2GJ838_nbKoheXqM0', request_payload
    
 end
 
