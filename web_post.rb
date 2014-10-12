@@ -6,7 +6,7 @@ require 'haml'
 require "bundler/setup"
 require 'rest_client'
 
-load 'iron.io/botweb_response.rb'
+require_relative 'iron.io/botweb_response.rb'
 
 get '/' do
   haml :index
